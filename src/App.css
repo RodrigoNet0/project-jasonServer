@@ -5,21 +5,14 @@
   text-align: center;
 }
 
-.container-info{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+img{
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
 }
 
 .container-name{
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 30rem;
-}
-
-img{
-  width: 100px;
-  border-radius: 50%;
+  gap: 10rem;
 }
