@@ -18,13 +18,16 @@ const App = () => {
 
   return (
     <div>
-      <h1 className="container-name">Your clients <CgMathPlus/></h1>
+      <h1 className="container-name">Your clients <CgMathPlus size={50}/></h1>
       {pessoas.map((pessoa) => (
-        <div key={pessoa.id}>
-          <img src={pessoa.imagem} alt={pessoa.nome} />
-          <h2>{pessoa.nome}</h2>
-          <p>{pessoa.descricao}</p>
-          <p>Idade: {pessoa.idade}</p>
+        <div key={pessoa.id} className="card">
+          <img src={pessoa.imagem} alt={pessoa.nome} className="img" />
+          <div className="infos">
+            <h2 className="name-card">{pessoa.nome}</h2>
+            <p>Idade: {pessoa.idade}</p>
+            <p>{pessoa.descricao}</p>
+            
+          </div>
         </div>
       ))}
     </div>

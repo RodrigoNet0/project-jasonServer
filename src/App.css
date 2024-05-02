@@ -1,18 +1,39 @@
+/* * {
+  box-sizing: border-box;
+  border: 1px solid red;
+  outline-offset: -1px;
+} */
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: white;
+  color: black;
 }
 
-img{
-  width: 100px;
-  border-radius: 50%;
-  border: 5px solid white;
+.img{
+  width: 150px;
+  height: 100px;
+  border-radius: 100%;
+  border: 2px solid green;
+  object-fit: fill;
 }
 
 .container-name{
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  gap: 20rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid green;
+  margin: 15px;
+  padding: 1rem;
+  border-radius: 10px;
 }
